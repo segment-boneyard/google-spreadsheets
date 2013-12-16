@@ -77,6 +77,73 @@ worksheet.update()
 
 ## API
 
+### Spreadsheets
+
+#### .login(username, password)
+
+  Adds a client-login authentication password for the Google Spreadsheets service.
+
+#### .key(key)
+
+  Creates an open query for a spreadsheet with `key`.
+
+#### .name(name)
+
+  Creates an open query for a spreadsheet with `name`.
+
+#### .open(callback)
+
+  Executes the spreadsheet open query.
+
+### Spreadsheet
+
+#### .worksheets
+
+  An array of worksheets accessible on the spreadsheet.
+
+#### .select(id)
+
+  Return a worksheet with `id` within the spreadsheet.
+
+#### .query()
+
+  Creates a worksheet `CellQuery`.
+
+#### .update()
+
+  Creates a worksheet `UpdateQuery`.
+
+### CellQuery
+
+#### .cell(row, column)
+
+  Adds a cell to lookup within the `CellQuery`.
+
+#### .get(callback)
+
+  Executes the `CellQuery`.
+
+### UpdateQuery
+
+#### .cell(row, column, val)
+
+  Adds a cell to update to the batch update query.
+
+#### .send(callback)
+
+  Sends the cell update batch query.
+
 ## License
 
-  MIT
+```
+WWWWWW||WWWWWW
+ W W W||W W W
+      ||
+    ( OO )__________
+     /  |           \
+    /o o|    MIT     \
+    \___/||_||__||_|| *
+         || ||  || ||
+        _||_|| _||_||
+       (__|__|(__|__|
+```
