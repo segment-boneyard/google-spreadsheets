@@ -4,7 +4,7 @@
 
 ## Installation
 
-    $ npm install google-spreadsheets
+    $ npm install segmentio/google-spreadsheets
 
 ## Examples
 
