@@ -1,6 +1,6 @@
 # Google Spreadsheets
 
-  A nicer Google Spreadsheets API for node, that supports batched reads and writes.
+  A nicer Google Spreadsheets API for node. Supports batched reads and writes.
 
 ## Installation
 
