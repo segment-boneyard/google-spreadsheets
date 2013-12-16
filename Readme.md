@@ -105,6 +105,8 @@ worksheet.update()
 
   Return a worksheet with `id` within the spreadsheet.
 
+### Worksheet
+
 #### .query()
 
   Creates a worksheet `CellQuery`.
