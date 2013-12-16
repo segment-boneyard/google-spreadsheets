@@ -1,0 +1,14 @@
+{
+  "name": "google-spreadsheets",
+  "version": "0.0.1",
+  "main": "./lib",
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "dependencies": {
+    "request": "~2.27.0",
+    "googleclientlogin": "~0.2.6",
+    "extend": "~1.2.1",
+    "xml2json": "~0.3.2"
+  }
+}
