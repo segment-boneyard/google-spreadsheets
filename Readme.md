@@ -46,6 +46,15 @@ spreadsheets
   .open(function (err, spreadsheet) {
     var worksheets = spreadsheet.worksheets;
     var worksheet = spreadsheet.select(worksheets[0].id);
+    console.log(worksheet);
+    /*
+    {
+      id: 'od6',
+      name: 'Sheet1',
+      columnCount: 20,
+      rowCount: 20
+    }
+    */
   });
 ```
 
@@ -72,6 +81,22 @@ worksheet.update()
   .cell(1, 4, 'hello2')
   .send(function (err) {
     
+});
+```
+
+### Query Worksheet Metadata
+
+```js
+worksheet.metadata(function (err, metadata) {
+  console.log(metadata);
+  /*
+  {
+    id: 'od6',
+    name: 'Sheet1',
+    columnCount: 20,
+    rowCount: 20
+  }
+  */
 });
 ```
 
@@ -114,6 +139,10 @@ worksheet.update()
 #### .update()
 
   Creates a worksheet `UpdateQuery`.
+
+#### .metadata(callback)
+
+  Queries for a worksheet's metadata.
 
 ### CellQuery
 
