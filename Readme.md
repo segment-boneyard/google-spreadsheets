@@ -67,8 +67,8 @@ worksheet.query()
   .get(function (err, cells) {
     console.log(cells);
     // [
-    //   {row: 1, column: 1, value: 'something'},
-    //   {row: 1, column: 2, value: 'something else'}
+    //   {row: 1, column: 1, value: 'something', text: 'something'},
+    //   {row: 1, column: 2, value: '=R[-1]C/12', text: '$18233.33', numeric: 18233.33 }
     // ]
 });
 ```
