@@ -13,7 +13,7 @@
 ```js
 var spreadsheets = require('google-spreadsheets');
 
-spreadsheets
+spreadsheets()
   .login('username', 'password')
   .key('0AvP3ixW_RotVdHdnWDZvUHhnWWhHQy0xZFViN3hUSmc')
   .open(function (err, spreadsheet) {
@@ -22,7 +22,7 @@ spreadsheets
 ```
 
 ```js
-spreadsheets.open()
+spreadsheets()
   .login('username', 'password')
   .name('Segment.io Users')
   .open(function (err, spreadsheet) {
@@ -40,7 +40,7 @@ var sheet = spreadsheet.select('id');
 or full example:
 
 ```js
-spreadsheets
+spreadsheets()
   .login('username', 'password')
   .key('0AvP3ixW_RotVdHdnWDZvUHhnWWhHQy0xZFViN3hUSmc')
   .open(function (err, spreadsheet) {
