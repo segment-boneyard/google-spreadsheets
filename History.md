@@ -1,3 +1,8 @@
+
+0.1.1 / 2014-11-14
+==================
+
+  * tests passing with new spreadsheet api
 0.0.3 / December 23, 2013
 ==================
 - add `worksheet.metadata(callback)`
