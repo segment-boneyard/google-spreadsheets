@@ -1,3 +1,7 @@
+0.1.3 / 2014-11-14
+==================
+  * removing queries.key == query.key from spreadsheet.open()
+
 
 0.1.2 / 2014-11-14
 ==================
